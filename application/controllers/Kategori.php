@@ -4,12 +4,12 @@ class Kategori extends CI_Controller {
     function __construct()
     {
         parent::__construct();
-        $this->load->model(model: "mKategori"); 
+        $this->load->model( "mKategori"); 
     }
 
-    function index(): void{
+    function index(){
         $data["data"] = $this->mKategori->getData();
-        $this->load->view(view: "view_kategori", vars: $data);
+        $this->load->view( "view_kategori",  $data);
     }
 }
 

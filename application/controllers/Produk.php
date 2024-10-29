@@ -4,12 +4,12 @@ class Produk extends CI_Controller {
     function __construct()
     {
         parent::__construct();
-        $this->load->model(model: "mProduk"); 
+        $this->load->model( "mProduk"); 
     }
 
-    function index(): void{
+    function index(){
         $data["data"] = $this->mProduk->getData();
-        $this->load->view(view: "view_produk", vars: $data);
+        $this->load->view("view_produk",  $data);
     }
 }
 
