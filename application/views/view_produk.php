@@ -28,10 +28,10 @@
                 <td><?= $row->nama_produk; ?></td>
                 <td><?= $row->id_kategori; ?></td>
                 <td><?= $row->id_satuan; ?></td>
-                <td><?= $row->barcodek; ?></td>
+                <td><?= $row->barcode; ?></td>
                 <td><?= $row->harga_beli; ?></td>
                 <td><?= $row->harga_pokok; ?></td>
-                <td><?= $row->harga_Jual; ?></td>
+                <td><?= $row->harga_jual; ?></td>
                 <td><?= $row->is_status ? 'Stock masih ada' : 'Stock sudah habis'; ?></td>
             </tr> 
         <?php endforeach;?>
